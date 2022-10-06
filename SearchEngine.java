@@ -31,8 +31,7 @@ class Handler implements URLHandler {
             }
             else if (url.getPath().contains("search")) 
                 {
-                    ArrayList<String> strtolist = new ArrayList<String>();
-
+                    String strlist = "";
                     String[] parameters = url.getQuery().split("=");
                     if (parameters[0].equals("s"))
                     {
@@ -41,10 +40,11 @@ class Handler implements URLHandler {
                         if (str.get(i).contains(parameters[1]))
                         {
 
-                            strtolist.add(str.get(i));
+                            strlist += str.get(i) + ";";
                         }
                         
                         }
+                        return String.format(strlist);
                         
                     } 
                 
