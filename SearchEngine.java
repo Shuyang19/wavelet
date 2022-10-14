@@ -44,7 +44,7 @@ class Handler implements URLHandler {
                         }
                         
                         }
-                        return "":
+                        return "";
                         
                     } 
                 
