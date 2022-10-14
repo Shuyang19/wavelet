@@ -40,11 +40,11 @@ class Handler implements URLHandler {
                         if (str.get(i).contains(parameters[1]))
                         {
 
-                            return str.get(i);
+                            strlist = strlist + str.get(i) + "; ";
                         }
                         
                         }
-                        return "";
+                        return strlist;
                         
                     } 
                 
